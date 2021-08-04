@@ -46,7 +46,7 @@ const data = [
 
 function AppPricing() {
     return (
-        <div className="block pricingBlock bgGray">
+        <div  id="pricing" className="block pricingBlock bgGray">
             <div className="container-fluid">
                 <div className="titleHolder">
                     <h2>Choose a plan to fit your needs</h2>
@@ -56,11 +56,11 @@ function AppPricing() {
                     grid={{
                         gutter: 16,
                         xs: 1,
-                        sm: 2,
-                        md: 4,
-                        lg: 4,
-                        xl: 6,
-                        xxl: 3,
+                        sm: 1,
+                        md: 3,
+                        lg: 3,
+                        xl: 3,
+                        xxl:3,
                     }}
                     dataSource={data}
                     renderItem={item => (
@@ -72,7 +72,7 @@ function AppPricing() {
                                 <p>{item.content[0].support}</p>
                                 <p>{item.content[0].backup}</p>
                                 <p>{item.content[0].access}</p>
-                                <Button type="primary" size="large"><i class="fab fa-telegram-plane"></i>Get Start </Button>
+                                <Button type="primary" size="large"><i className="fab fa-telegram-plane"></i>Get Start </Button>
                             </Card>
                         </List.Item>
                     )}

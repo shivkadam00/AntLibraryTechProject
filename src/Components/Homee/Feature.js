@@ -13,14 +13,14 @@ const { Meta } = Card;
 
 function AppFeature(){
     return(
-        <div className="block featureBlock bgGray">
+        <div id="feature" className="block featureBlock bgGray">
             <div className="container-fluid">
                 <div className ="titleHolder">
                     <h2>Key Features and Benefits</h2>
                     <p>Obcaecati consequatur libero repudiandae, aperiam itaque laborum!</p>
                 </div>
                 <Row gutter={[16, 16]}>
-                    <Col span={8}>
+                    <Col xs={{ span:24 }} sm={{ span:12 }} md={{ span: 8 }} >
                         <Card
                             hoverable
                            
@@ -29,7 +29,7 @@ function AppFeature(){
                             <Meta title="Meordrn Design"  />
                         </Card>
                     </Col>
-                    <Col span={8}>
+                    <Col xs={{ span:24 }} sm={{ span: 12}}md={{ span: 8 }}>
                         <Card
                             hoverable
                            
@@ -38,7 +38,7 @@ function AppFeature(){
                             <Meta title="clean-design"  />
                         </Card>
                     </Col>
-                    <Col span={8}>
+                    <Col xs={{ span:24 }} sm={{ span:12 }}md={{ span: 8 }}>
                         <Card
                             hoverable
                            
@@ -47,7 +47,7 @@ function AppFeature(){
                             <Meta title="Mgreat-support"  />
                         </Card>
                     </Col>
-                    <Col span={8}>
+                    <Col xs={{ span:24 }} sm={{ span:12}}md={{ span: 8 }}>
                         <Card
                             hoverable
                            
@@ -57,7 +57,7 @@ function AppFeature(){
                         </Card>
                     </Col>
                     
-                    <Col span={8}>
+                    <Col xs={{ span:24 }} sm={{ span: 12 }}md={{ span: 8 }}>
                         <Card
                             hoverable
                            
@@ -66,7 +66,7 @@ function AppFeature(){
                             <Meta title="unlimited-features"  />
                         </Card>
                     </Col>
-                    <Col span={8}>
+                    <Col xs={{ span:24 }} sm={{ span:12 }}md={{ span: 8 }}>
                         <Card
                             hoverable
                            
